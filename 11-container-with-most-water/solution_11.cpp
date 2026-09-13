@@ -9,9 +9,9 @@ public:
     int left = 0;
     int right = height.size() - 1;
     while (left < right) {
-        int width = right - left; //считаем ширину
-        int h = min(height[left], height[right]);// Считаем длину
-        int area = width * h;// Считаем текущую площадь
+        int width = right - left; //Вычисляем ширину
+        int h = min(height[left], height[right]);// Вычисляем высоту
+        int area = width * h;// Вычисляем текущую площадь
         maxarea = max(maxarea, area); //Выбираем максимальную площадь
             //Сдвигаем меньший столбик
         if (height[left] < height[right]) {
